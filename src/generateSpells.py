@@ -17,7 +17,8 @@ def readSpellTemplate() -> AFU.FileIO:
 
 
 def cleanOld() -> None:
-    AFU.deleteDirectory("spells")
+    if AFU.directoryExists("spells"):
+        AFU.deleteDirectory("spells")
     AFU.createDirectory("spells")
     AFU.createDirectory("spells/Cantrip")
     AFU.createDirectory("spells/1")

@@ -1,0 +1,150 @@
+\documentclass[a5paper,18pt]{book}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+
+\usepackage{anysize}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{subfiles}
+\usepackage{appendix}
+\usepackage{fancyhdr}
+
+%Margenes
+\marginsize{2.5cm}{2.5cm}{1cm}{1cm}
+%\marginsize{Izque}{Derec}{Arrib}{Abajo}
+
+% cabecera y pie
+ % activamos el paquete
+\pagestyle{fancy} % seleccionamos un estilo
+\fancyfoot{} % borramos cualquier configuración anterior
+\fancyhead{} % borramos cualquier configuración anterior
+\fancyfoot[R]{\thepage}
+\fancyfoot[L]{\today}
+\fancyhead[C]{\leftmark}
+
+\renewcommand{\headrulewidth}{0.4pt} % grosor de la línea de la cabecera
+\renewcommand{\footrulewidth}{0.4pt} % grosor de la línea del pie
+\titlespacing\section{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\setcounter{tocdepth}{1} % Show sections
+
+\title{Cleric Spell Books}
+\author{Iñaki Arrondo}
+\date{\today}
+\begin{document}
+\large
+
+\maketitle
+
+\tableofcontents
+\chapter{Cantrips}
+
+\subfile{spells/Cantrip/Guidance}
+\subfile{spells/Cantrip/Light}
+\subfile{spells/Cantrip/Mending}
+\subfile{spells/Cantrip/Resistance}
+\subfile{spells/Cantrip/Sacred_Flame}
+\subfile{spells/Cantrip/Spare_the_Dying}
+\subfile{spells/Cantrip/Thaumaturgy}
+\subfile{spells/Cantrip/Toll_the_Dead}
+\subfile{spells/Cantrip/Word_of_Radiance}
+\chapter{Level 1}
+
+\subfile{spells/1/Bane}
+\subfile{spells/1/Bless}
+\subfile{spells/1/Ceremony}
+\subfile{spells/1/Command}
+\subfile{spells/1/Create_or_Destroy_Water}
+\subfile{spells/1/Cure_Wounds}
+\subfile{spells/1/Detect_Evil_and_Good}
+\subfile{spells/1/Detect_Magic}
+\subfile{spells/1/Detect_Poison_and_Disease}
+\subfile{spells/1/Guiding_Bolt}
+\subfile{spells/1/Healing_Word}
+\subfile{spells/1/Inflict_Wounds}
+\subfile{spells/1/Protection_from_Evil_and_Good}
+\subfile{spells/1/Purify_Food_and_Drink}
+\subfile{spells/1/Sanctuary}
+\subfile{spells/1/Shield_of_Faith}
+\chapter{Level 2}
+
+\subfile{spells/2/Aid}
+\subfile{spells/2/Augury}
+\subfile{spells/2/Blindness_Deafness}
+\subfile{spells/2/Borrowed_Knowledge}
+\subfile{spells/2/Calm_Emotions}
+\subfile{spells/2/Continual_Flame}
+\subfile{spells/2/Enhance_Ability}
+\subfile{spells/2/Find_Traps}
+\subfile{spells/2/Gentle_Repose}
+\subfile{spells/2/Hold_Person}
+\subfile{spells/2/Lesser_Restoration}
+\subfile{spells/2/Locate_Object}
+\subfile{spells/2/Prayer_of_Healing}
+\subfile{spells/2/Protection_from_Poison}
+\subfile{spells/2/Silence}
+\subfile{spells/2/Spiritual_Weapon}
+\subfile{spells/2/Warding_Bond}
+\subfile{spells/2/Zone_of_Truth}
+\chapter{Level 3}
+
+\subfile{spells/3/Animate_Dead}
+\subfile{spells/3/Beacon_of_Hope}
+\subfile{spells/3/Bestow_Curse}
+\subfile{spells/3/Clairvoyance}
+\subfile{spells/3/Create_Food_and_Water}
+\subfile{spells/3/Daylight}
+\subfile{spells/3/Dispel_Magic}
+\subfile{spells/3/Fast_Friends}
+\subfile{spells/3/Feign_Death}
+\subfile{spells/3/Glyph_of_Warding}
+\subfile{spells/3/Incite_Greed}
+\subfile{spells/3/Life_Transference}
+\subfile{spells/3/Magic_Circle}
+\subfile{spells/3/Mass_Healing_Word}
+\subfile{spells/3/Meld_into_Stone}
+\subfile{spells/3/Motivational_Speech}
+\subfile{spells/3/Protection_from_Energy}
+\subfile{spells/3/Remove_Curse}
+\subfile{spells/3/Revivify}
+\subfile{spells/3/Sending}
+\subfile{spells/3/Speak_with_Dead}
+\subfile{spells/3/Spirit_Guardians}
+\subfile{spells/3/Tongues}
+\subfile{spells/3/Water_Walk}
+\chapter{Level 4}
+
+\subfile{spells/4/Banishment}
+\subfile{spells/4/Control_Water}
+\subfile{spells/4/Death_Ward}
+\subfile{spells/4/Divination}
+\subfile{spells/4/Freedom_of_Movement}
+\subfile{spells/4/Guardian_of_Faith}
+\subfile{spells/4/Locate_Creature}
+\subfile{spells/4/Stone_Shape}
+\chapter{Level 5}
+
+\subfile{spells/5/Commune}
+\subfile{spells/5/Contagion}
+\subfile{spells/5/Dawn}
+\subfile{spells/5/Dispel_Evil_and_Good}
+\subfile{spells/5/Flame_Strike}
+\subfile{spells/5/Geas}
+\subfile{spells/5/Greater_Restoration}
+\subfile{spells/5/Hallow}
+\subfile{spells/5/Holy_Weapon}
+\subfile{spells/5/Insect_Plague}
+\subfile{spells/5/Legend_Lore}
+\subfile{spells/5/Mass_Cure_Wounds}
+\subfile{spells/5/Planar_Binding}
+\subfile{spells/5/Raise_Dead}
+\subfile{spells/5/Scrying}
+\end{document}

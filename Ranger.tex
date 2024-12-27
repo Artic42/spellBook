@@ -1,0 +1,115 @@
+\documentclass[a5paper,18pt]{book}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+
+\usepackage{anysize}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{subfiles}
+\usepackage{appendix}
+\usepackage{fancyhdr}
+
+%Margenes
+\marginsize{2.5cm}{2.5cm}{1cm}{1cm}
+%\marginsize{Izque}{Derec}{Arrib}{Abajo}
+
+% cabecera y pie
+ % activamos el paquete
+\pagestyle{fancy} % seleccionamos un estilo
+\fancyfoot{} % borramos cualquier configuración anterior
+\fancyhead{} % borramos cualquier configuración anterior
+\fancyfoot[R]{\thepage}
+\fancyfoot[L]{\today}
+\fancyhead[C]{\leftmark}
+
+\renewcommand{\headrulewidth}{0.4pt} % grosor de la línea de la cabecera
+\renewcommand{\footrulewidth}{0.4pt} % grosor de la línea del pie
+\titlespacing\section{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\setcounter{tocdepth}{1} % Show sections
+
+\title{Ranger Spell Books}
+\author{Iñaki Arrondo}
+\date{\today}
+\begin{document}
+\large
+
+\maketitle
+
+\tableofcontents
+
+\chapter{Level 1}
+\subfile{spells/1/Absorb_Elements}
+\subfile{spells/1/Alarm}
+\subfile{spells/1/Animal_Friendship}
+\subfile{spells/1/Beast_Bond}
+\subfile{spells/1/Cure_Wounds}
+\subfile{spells/1/Detect_Magic}
+\subfile{spells/1/Detect_Poison_and_Disease}
+\subfile{spells/1/Ensnaring_Strike}
+\subfile{spells/1/Fog_Cloud}
+\subfile{spells/1/Goodberry}
+\subfile{spells/1/Hail_of_Thorns}
+\subfile{spells/1/Hunter's_Mark}
+\subfile{spells/1/Jump}
+\subfile{spells/1/Longstrider}
+\subfile{spells/1/Snare}
+\subfile{spells/1/Speak_with_Animals}
+\subfile{spells/1/Zephyr_Strike}
+
+\chapter{Level 2}
+\subfile{spells/2/Air_Bubble}
+\subfile{spells/2/Animal_Messenger}
+\subfile{spells/2/Barkskin}
+\subfile{spells/2/Beast_Sense}
+\subfile{spells/2/Cordon_of_Arrows}
+\subfile{spells/2/Darkvision}
+\subfile{spells/2/Find_Traps}
+\subfile{spells/2/Healing_Spirit}
+\subfile{spells/2/Lesser_Restoration}
+\subfile{spells/2/Locate_Animals_or_Plants}
+\subfile{spells/2/Locate_Object}
+\subfile{spells/2/Pass_without_Trace}
+\subfile{spells/2/Protection_from_Poison}
+\subfile{spells/2/Silence}
+\subfile{spells/2/Spike_Growth}
+
+\chapter{Level 3}
+\subfile{spells/3/Ashardalon's_Stride}
+\subfile{spells/3/Conjure_Animals}
+\subfile{spells/3/Conjure_Barrage}
+\subfile{spells/3/Daylight}
+\subfile{spells/3/Flame_Arrows}
+\subfile{spells/3/Lightning_Arrow}
+\subfile{spells/3/Nondetection}
+\subfile{spells/3/Plant_Growth}
+\subfile{spells/3/Protection_from_Energy}
+\subfile{spells/3/Speak_with_Plants}
+\subfile{spells/3/Water_Breathing}
+\subfile{spells/3/Water_Walk}
+\subfile{spells/3/Wind_Wall}
+
+\chapter{Level 4}
+\subfile{spells/4/Conjure_Woodland_Beings}
+\subfile{spells/4/Freedom_of_Movement}
+\subfile{spells/4/Grasping_Vine}
+\subfile{spells/4/Guardian_of_Nature}
+\subfile{spells/4/Locate_Creature}
+\subfile{spells/4/Stoneskin}
+
+\chapter{Level 5}
+\subfile{spells/5/Commune_with_Nature}
+\subfile{spells/5/Conjure_Volley}
+\subfile{spells/5/Steel_Wind_Strike}
+\subfile{spells/5/Swift_Quiver}
+\subfile{spells/5/Tree_Stride}
+\subfile{spells/5/Wrath_of_Nature}
+\end{document}

@@ -1,0 +1,156 @@
+\documentclass[a5paper,18pt]{book}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+
+\makeatother
+
+
+\usepackage{anysize}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{subfiles}
+\usepackage{appendix}
+\usepackage{fancyhdr}
+
+%Margenes
+\marginsize{2.5cm}{2.5cm}{1cm}{1cm}
+%\marginsize{Izque}{Derec}{Arrib}{Abajo}
+
+% cabecera y pie
+ % activamos el paquete
+\pagestyle{fancy} % seleccionamos un estilo
+\fancyfoot{} % borramos cualquier configuración anterior
+\fancyhead{} % borramos cualquier configuración anterior
+\fancyfoot[R]{\thepage}
+\fancyfoot[L]{\today}
+\fancyhead[C]{\leftmark}
+
+\renewcommand{\headrulewidth}{0.4pt} % grosor de la línea de la cabecera
+\renewcommand{\footrulewidth}{0.4pt} % grosor de la línea del pie
+
+\titlespacing\section{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\setcounter{tocdepth}{1} % Show sections
+
+\title{Artificer Spell Books}
+\author{Iñaki Arrondo}
+\date{\today}
+\begin{document}
+\large
+
+\maketitle
+
+\tableofcontents
+\chapter{Cantrips}
+\subfile{spells/Cantrip/Acid_Splash}
+\subfile{spells/Cantrip/Booming_Blade}
+\subfile{spells/Cantrip/Create_Bonfire}
+\subfile{spells/Cantrip/Dancing_Lights}
+\subfile{spells/Cantrip/Fire_Bolt}
+\subfile{spells/Cantrip/Frostbite}
+\subfile{spells/Cantrip/Green-Flame_Blade}
+\subfile{spells/Cantrip/Guidance}
+\subfile{spells/Cantrip/Light}
+\subfile{spells/Cantrip/Lightning_Lure}
+\subfile{spells/Cantrip/Mage_Hand}
+\subfile{spells/Cantrip/Magic_Stone}
+\subfile{spells/Cantrip/Mending}
+\subfile{spells/Cantrip/Message}
+\subfile{spells/Cantrip/Poison_Spray}
+\subfile{spells/Cantrip/Prestidigitation}
+\subfile{spells/Cantrip/Ray_of_Frost}
+\subfile{spells/Cantrip/Resistance}
+\subfile{spells/Cantrip/Shocking_Grasp}
+\subfile{spells/Cantrip/Spare_the_Dying}
+\subfile{spells/Cantrip/Sword_Burst}
+\subfile{spells/Cantrip/Thorn_Whip}
+\subfile{spells/Cantrip/Thunderclap}
+\chapter{Level 1}
+\subfile{spells/1/Absorb_Elements}
+\subfile{spells/1/Alarm}
+\subfile{spells/1/Catapult}
+\subfile{spells/1/Cure_Wounds}
+\subfile{spells/1/Detect_Magic}
+\subfile{spells/1/Disguise_Self}
+\subfile{spells/1/Expeditious_Retreat}
+\subfile{spells/1/Faerie_Fire}
+\subfile{spells/1/False_Life}
+\subfile{spells/1/Feather_Fall}
+\subfile{spells/1/Grease}
+\subfile{spells/1/Identify}
+\subfile{spells/1/Jump}
+\subfile{spells/1/Longstrider}
+\subfile{spells/1/Purify_Food_and_Drink}
+\subfile{spells/1/Sanctuary}
+\subfile{spells/1/Snare}
+\subfile{spells/1/Tasha's_Caustic_Brew}
+\chapter{Level 2}
+\subfile{spells/2/Aid}
+\subfile{spells/2/Air_Bubble}
+\subfile{spells/2/Alter_Self}
+\subfile{spells/2/Arcane_Lock}
+\subfile{spells/2/Blur}
+\subfile{spells/2/Continual_Flame}
+\subfile{spells/2/Darkvision}
+\subfile{spells/2/Enhance_Ability}
+\subfile{spells/2/Enlarge_Reduce}
+\subfile{spells/2/Heat_Metal}
+\subfile{spells/2/Invisibility}
+\subfile{spells/2/Kinetic_Jaunt}
+\subfile{spells/2/Lesser_Restoration}
+\subfile{spells/2/Levitate}
+\subfile{spells/2/Magic_Mouth}
+\subfile{spells/2/Magic_Weapon}
+\subfile{spells/2/Protection_from_Poison}
+\subfile{spells/2/Pyrotechnics}
+\subfile{spells/2/Rope_Trick}
+\subfile{spells/2/See_Invisibility}
+\subfile{spells/2/Skywrite}
+\subfile{spells/2/Spider_Climb}
+\subfile{spells/2/Vortex_Warp}
+\subfile{spells/2/Web}
+\chapter{Level 3}
+\subfile{spells/3/Ashardalon's_Stride}
+\subfile{spells/3/Blink}
+\subfile{spells/3/Catnap}
+\subfile{spells/3/Create_Food_and_Water}
+\subfile{spells/3/Dispel_Magic}
+\subfile{spells/3/Elemental_Weapon}
+\subfile{spells/3/Flame_Arrows}
+\subfile{spells/3/Fly}
+\subfile{spells/3/Glyph_of_Warding}
+\subfile{spells/3/Haste}
+\subfile{spells/3/Intellect_Fortress}
+\subfile{spells/3/Protection_from_Energy}
+\subfile{spells/3/Revivify}
+\subfile{spells/3/Tiny_Servant}
+\subfile{spells/3/Water_Breathing}
+\subfile{spells/3/Water_Walk}
+\chapter{Level 4}
+\subfile{spells/4/Arcane_Eye}
+\subfile{spells/4/Elemental_Bane}
+\subfile{spells/4/Fabricate}
+\subfile{spells/4/Freedom_of_Movement}
+\subfile{spells/4/Leomund's_Secret_Chest}
+\subfile{spells/4/Mordenkainen's_Faithful_Hound}
+\subfile{spells/4/Mordenkainen's_Private_Sanctum}
+\subfile{spells/4/Otiluke's_Resilient_Sphere}
+\subfile{spells/4/Stone_Shape}
+\subfile{spells/4/Stoneskin}
+\subfile{spells/4/Summon_Construct}
+\chapter{Level 5}
+\subfile{spells/5/Animate_Objects}
+\subfile{spells/5/Bigby's_Hand}
+\subfile{spells/5/Create_Spelljamming_Helm}
+\subfile{spells/5/Creation}
+\subfile{spells/5/Greater_Restoration}
+\subfile{spells/5/Skill_Empowerment}
+\subfile{spells/5/Transmute_Rock}
+\subfile{spells/5/Wall_of_Stone}
+\end{document}

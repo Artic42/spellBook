@@ -1,6 +1,5 @@
 import json
 import articlib.articFileUtils as AFU
-import articlib.systemUtils as sysUtils
 
 
 if __name__ == "__main__":
@@ -13,34 +12,33 @@ if __name__ == "__main__":
     file.path = "artificer.tex"
 
     # Add cantrips
-    file.addLine("\\chapter{Cantrips}")
-    file.addLine("")
     artificerCantrips = {}
     for spell in metaData:
         if "Artificer" in metaData[spell]["Classes"] and metaData[spell]["Level"] == "Cantrip":
             artificerCantrips[spell] = metaData[spell]
 
-    for spell in artificerCantrips:
-        fileName = spell
-        fileName = spell.replace(" ", "_")
-        fileName = fileName.replace("/", "_")
-        file.addLine(f"\\subfile{{spells/Cantrip/{fileName}}}")
-        
+    if len(artificerCantrips) != 0:
+        file.addLine("\\chapter{Cantrips}")
+        for spell in artificerCantrips:
+            fileName = spell
+            fileName = spell.replace(" ", "_")
+            fileName = fileName.replace("/", "_")
+            file.addLine(f"\\subfile{{spells/Cantrip/{fileName}}}")
+
     # Add rest of spells
-    for i in range(1, 6):
-        file.addLine(f"\\chapter{{Level {i}}}")
-        file.addLine("")
+    for i in range(1, 10):
         artificerSpells = {}
         for spell in metaData:
             if "Artificer" in metaData[spell]["Classes"] and metaData[spell]["Level"] == i:
                 artificerSpells[spell] = metaData[spell]
 
-        for spell in artificerSpells:
-            fileName = spell
-            fileName = spell.replace(" ", "_")
-            fileName = fileName.replace("/", "_")
-            file.addLine(f"\\subfile{{spells/{i}/{fileName}}}")
+        if len(artificerSpells) != 0:
+            file.addLine(f"\\chapter{{Level {i}}}")
+            for spell in artificerSpells:
+                fileName = spell
+                fileName = spell.replace(" ", "_")
+                fileName = fileName.replace("/", "_")
+                file.addLine(f"\\subfile{{spells/{i}/{fileName}}}")
 
     file.addLine("\\end{document}")
     file.writeFile()
-    sysUtils.command("pdflatex artificer.tex")

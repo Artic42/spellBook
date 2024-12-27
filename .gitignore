@@ -16,3 +16,7 @@
 *.pyd
 __pycache__/
 .venv/
+
+## Intermidiate files
+
+spells/*
