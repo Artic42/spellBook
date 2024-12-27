@@ -1,5 +1,18 @@
 {
     "git.enableCommitSigning": false,
     "editor.renderWhitespace": "boundary",
-    "editor.renderControlCharacters": true
+    "editor.renderControlCharacters": true,
+    "python.analysis.extraPaths": [
+        "./.venv/lib/python3.12/site-packages"
+    ],
+    "cSpell.ignorePaths": [
+    "pyproject.toml",
+    "poetry.lock",
+    ".vscode/settings.json",
+    ".gitignore"
+  ],
+  "cSpell.words": [
+    "artic",
+    "articlib"
+  ]
 }

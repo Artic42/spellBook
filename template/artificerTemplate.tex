@@ -1,0 +1,47 @@
+\documentclass[a5paper,18pt]{book}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+
+\usepackage{anysize}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{subfiles}
+\usepackage{appendix}
+\usepackage{fancyhdr}
+
+%Margenes
+\marginsize{2.5cm}{2.5cm}{1cm}{1cm}
+%\marginsize{Izque}{Derec}{Arrib}{Abajo}
+
+% cabecera y pie
+ % activamos el paquete
+\pagestyle{fancy} % seleccionamos un estilo
+\fancyfoot{} % borramos cualquier configuración anterior
+\fancyhead{} % borramos cualquier configuración anterior
+\fancyfoot[R]{\thepage}
+\fancyfoot[L]{\today}
+\fancyhead[C]{\leftmark}
+
+\renewcommand{\headrulewidth}{0.4pt} % grosor de la línea de la cabecera
+\renewcommand{\footrulewidth}{0.4pt} % grosor de la línea del pie
+\titlespacing\section{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\setcounter{tocdepth}{1} % Show sections
+
+\title{Artificer Spell Books}
+\author{Iñaki Arrondo}
+\date{\today}
+\begin{document}
+\large
+
+\maketitle
+
+\tableofcontents
