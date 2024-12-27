@@ -1,0 +1,94 @@
+\documentclass[a6paper,8pt]{book}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+
+\usepackage{anysize}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{amsmath ,amsthm ,amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{tabulary}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{pdfpages}
+\usepackage{verbatim}
+\usepackage{subfigure}
+\usepackage{subfiles}
+\usepackage{appendix}
+\usepackage{wrapfig} %Figuras al lado de texto
+\usepackage[rflt]{floatflt} %Figuras flotantes entre el texto
+
+%Margenes
+\marginsize{1.5cm}{1.5cm}{0.7cm}{0.7cm}
+%\marginsize{Izque}{Derec}{Arrib}{Abajo}
+
+% cabecera y pie
+\usepackage{fancyhdr} % activamos el paquete
+\pagestyle{fancy} % seleccionamos un estilo
+\fancyfoot{} % borramos cualquier configuración anterior
+\fancyhead{} % borramos cualquier configuración anterior
+\fancyfoot[RO,RE]{\thepage}
+\fancyfoot[LO,LE]{\today}
+\fancyhead[CE,CO]{\leftmark}
+
+\renewcommand{\headrulewidth}{0.4pt} % grosor de la línea de la cabecera
+\renewcommand{\footrulewidth}{0.4pt} % grosor de la línea del pie
+\titlespacing\section{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+
+
+\title{Spell Book}
+\author{Iñaki Arrondo}
+\date{December 2024}
+\begin{document}
+\maketitle
+
+\chapter{1st Level Spells}
+
+\newpage
+\section{Magic Missile}
+\noindent\textit{1st-level evocation}\\
+
+\textbf{Casting Time:} 1 action
+
+\textbf{Range:} 120 feet
+ 
+\textbf{Components:} V, S
+
+\textbf{Duration:} Instantaneous 
+
+\textbf{Classes:} Sorcerer, Wizard\\
+
+You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several. \\
+
+\paragraph{At Higher Levels.} When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.
+
+\newpage
+\section{Shield}
+\noindent\textit{1st-level abjuration}\\
+
+\textbf{Casting Time:} 1 reaction, which you take when you are hit by an attack or targeted by the magic missile spell
+
+\textbf{Range:} Self
+
+\textbf{Components:} V, S
+
+\textbf{Duration:} 1 round
+
+\textbf{Classes:} Sorcerer, Wizard\\
+
+An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.
+
+
+
+
+% This line here is a comment. It will not be typeset in the document.
+\end{document}

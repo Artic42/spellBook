@@ -1,0 +1,5 @@
+{
+    "git.enableCommitSigning": false,
+    "editor.renderWhitespace": "boundary",
+    "editor.renderControlCharacters": true
+}
